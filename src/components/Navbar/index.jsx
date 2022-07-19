@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <div className='navbar-left'>
-        <div className='navbar-left__name'>{`\<CjDev544 /\>`}</div>
+        <div className='navbar-left__name'>{`<CjDev544 />`}</div>
         <span>toggle</span>
       </div>
       <div className='navbar-right'>
