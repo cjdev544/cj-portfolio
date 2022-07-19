@@ -8,10 +8,10 @@ import 'swiper/css/scrollbar'
 import 'swiper/css'
 import './Portfolio.scss'
 
-const Portfolio = () => {
+const Portfolio = ({ isDarkMode }) => {
   return (
     <section className='portfolio'>
-      <span>Deslisar para ver más</span>
+      <span style={{ color: isDarkMode && '#fff' }}>Deslisar para ver más</span>
       <h2>Proyectos</h2>
       <p>Puedes dar click sobre un proyecto y verlo mas a profundidad.</p>
       <Swiper

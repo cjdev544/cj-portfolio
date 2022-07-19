@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import About from '../components/About'
 import Services from '../components/Services'
@@ -9,20 +9,25 @@ import Footer from '../components/Footer'
 import '../scss/index.scss'
 
 const IndexPage = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false)
+
   return (
-    <>
+    <div
+      className='App'
+      style={{ background: isDarkMode && '#000', color: isDarkMode && '#fff' }}
+    >
       <header>
-        <Navbar />
+        <Navbar setIsDarkMode={setIsDarkMode} />
       </header>
       <main>
-        <About />
-        <Services />
-        <Skills />
-        <Portfolio />
-        <Contact />
+        <About isDarkMode={isDarkMode} />
+        <Services isDarkMode={isDarkMode} />
+        <Skills isDarkMode={isDarkMode} />
+        <Portfolio isDarkMode={isDarkMode} />
+        <Contact isDarkMode={isDarkMode} />
       </main>
-      <Footer />
-    </>
+      <Footer isDarkMode={isDarkMode} />
+    </div>
   )
 }
 

@@ -5,13 +5,10 @@
 }
 
 body {
-  color: $black;
   font-family: 'Gumela';
   font-size: 20px;
   font-weight: normal;
   margin: 0;
-  overflow-x: hidden;
-  padding: 0.5rem 3.5rem;
 }
 
 h1,
@@ -20,6 +17,12 @@ h3,
 p {
   padding: 0;
   margin: 0;
+}
+
+.App {
+  color: $black;
+  padding: 0.5rem 3.5rem;
+  overflow-x: hidden;
 }
 
 .button {

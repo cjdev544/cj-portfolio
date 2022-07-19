@@ -17,9 +17,27 @@ const Footer = () => {
       <div className='footer-content'>
         <span>CjDev544</span>
         <div className='footer-icons'>
-          <Gitub color='white' size={'3rem'} />
-          <Linkedin color='white' size={'3rem'} />
-          <Twitter color='white' size={'3rem'} />
+          <a
+            href='https://github.com/cjdev544'
+            rel='noopener noreferrer nofollow'
+            target='_blank'
+          >
+            <Gitub color='white' size={'3rem'} />
+          </a>
+          <a
+            href='https://www.linkedin.com/in/cjdev544'
+            rel='noopener noreferrer nofollow'
+            target='_blank'
+          >
+            <Linkedin color='white' size={'3rem'} />
+          </a>
+          <a
+            href='https://twitter.com/Jeffers27025518'
+            rel='noopener noreferrer nofollow'
+            target='_blank'
+          >
+            <Twitter color='white' size={'3rem'} />
+          </a>
         </div>
       </div>
     </footer>

@@ -1,12 +1,13 @@
 import React from 'react'
+import Toggle from '../Toggle'
 import './Navbar.scss'
 
-const Navbar = () => {
+const Navbar = ({ setIsDarkMode }) => {
   return (
     <nav className='navbar'>
       <div className='navbar-left'>
         <div className='navbar-left__name'>{`<CjDev544 />`}</div>
-        <span>toggle</span>
+        <Toggle setIsDarkMode={setIsDarkMode} />
       </div>
       <div className='navbar-right'>
         <div className='navbar-right__list'>

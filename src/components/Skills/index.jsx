@@ -2,11 +2,11 @@ import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import './Skills.scss'
 
-const Skills = () => {
+const Skills = ({ isDarkMode }) => {
   return (
     <section className='skills'>
       <div className='services-left'>
-        <span>Conoce que manejo</span>
+        <span style={{ color: isDarkMode && '#fff' }}>Conoce que manejo</span>
         <h2>Tecnologías</h2>
         <span>
           En esta sección podras ver las tegnologías con las que he trabajado.{' '}

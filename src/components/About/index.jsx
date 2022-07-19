@@ -3,12 +3,12 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Resume from './resume.pdf'
 import './About.scss'
 
-const About = () => {
+const About = ({ isDarkMode }) => {
   return (
     <section className='about'>
       <div className='about-left'>
         <div className='about-left__info'>
-          <span>¡Hola!, yo soy</span>
+          <span style={{ color: isDarkMode && '#fff' }}>¡Hola!, yo soy</span>
           <h1>Jefferson Campos</h1>
           <span>
             Un gusto poder saludarte, vivo en Caracas Venezuela, soy electrónico

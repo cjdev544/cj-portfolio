@@ -2,11 +2,11 @@ import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import './Services.scss'
 
-const Services = () => {
+const Services = ({ isDarkMode }) => {
   return (
     <section className='services'>
       <div className='services-left'>
-        <span>Conoce mis</span>
+        <span style={{ color: isDarkMode && '#fff' }}>Conoce mis</span>
         <h2>Servicios</h2>
         <span>
           En esta sección podras ver los servicios que ofrezco como
@@ -28,7 +28,7 @@ const Services = () => {
               alt='emoji diseño UI UX'
               className='services-card__img'
             />
-            <h3>UI / UX</h3>
+            <h3 style={{ color: isDarkMode && '#fff' }}>UI / UX</h3>
             <p>
               Diseños atracivos enfocados en la usabilidad y experencia de
               usuario
@@ -43,7 +43,7 @@ const Services = () => {
               alt='emoji Programación'
               className='services-card__img'
             />
-            <h3>Programación</h3>
+            <h3 style={{ color: isDarkMode && '#fff' }}>Programación</h3>
             <p>
               Desarrollo de sitios web, Apps web y Apps de escritorio con
               tecnologías web
@@ -58,7 +58,7 @@ const Services = () => {
               alt='emoji diseño renponsivo'
               className='services-card__img'
             />
-            <h3>Diseño responsivo</h3>
+            <h3 style={{ color: isDarkMode && '#fff' }}>Diseño responsivo</h3>
             <p>
               Diseño adaptable a dispositivos, mobil, tablet y de escritorio.
             </p>
