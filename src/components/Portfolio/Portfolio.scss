@@ -1,0 +1,54 @@
+@import '../../scss/vars.scss';
+
+.portfolio {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: center;
+  margin-top: 4rem;
+
+  span {
+    color: $black;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    color: $orange;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  p {
+    color: $gray;
+    font-size: 14px;
+  }
+
+  &-slider {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  &-img {
+    border-radius: 19px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.swiper {
+  overflow: visible;
+}
+
+.swiper-wrapper {
+  height: 17rem;
+  max-width: 1200px;
+}
+
+.swiper-slide {
+  width: 25rem !important;
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+}

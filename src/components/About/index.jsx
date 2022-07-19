@@ -21,21 +21,33 @@ const About = () => {
           <button className='button about-left__button'>Descargar CV</button>
         </a>
         <div className='about-left__icons'>
-          <a href='#' rel='noopener noreferrer nofollow' target='_blank'>
+          <a
+            href='https://github.com/cjdev544'
+            rel='noopener noreferrer nofollow'
+            target='_blank'
+          >
             <StaticImage
               src='../../images/github.png'
               placeholder='tracedSVG'
               alt='Github'
             />
           </a>
-          <a href='#' rel='noopener noreferrer nofollow' target='_blank'>
+          <a
+            href='https://www.linkedin.com/in/cjdev544'
+            rel='noopener noreferrer nofollow'
+            target='_blank'
+          >
             <StaticImage
               src='../../images/linkedin.png'
               placeholder='tracedSVG'
               alt='Linkedin'
             />
           </a>
-          <a href='#' rel='noopener noreferrer nofollow' target='_blank'>
+          <a
+            href='https://twitter.com/Jeffers27025518'
+            rel='noopener noreferrer nofollow'
+            target='_blank'
+          >
             <StaticImage
               src='../../images/twitter 1.png'
               placeholder='tracedSVG'
