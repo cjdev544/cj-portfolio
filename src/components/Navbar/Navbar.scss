@@ -1,0 +1,46 @@
+@import '../../scss/vars.scss';
+
+.navbar {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+
+  &-left {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+
+    &__name {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  &-right {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    font-weight: 400;
+    justify-content: center;
+
+    &__list {
+      flex: 10;
+
+      & > ul {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        margin-right: 4rem;
+        list-style: none;
+      }
+    }
+
+    &__list-item {
+      cursor: pointer;
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}
