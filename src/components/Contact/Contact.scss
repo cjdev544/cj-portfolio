@@ -1,0 +1,67 @@
+@import '../../scss/vars.scss';
+
+.contact {
+  display: flex;
+  height: 80vh;
+  margin-top: 8rem;
+  padding-top: 3rem;
+  padding: 0 3rem 0 3rem;
+
+  &-left {
+    position: relative;
+
+    span {
+      color: $black;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    h2 {
+      color: $orange;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+  }
+
+  &-right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &-input {
+    color: $gray;
+    border-radius: 8px;
+    border: 2px solid $orange;
+    font-family: 'Gumela';
+    font-size: 16px;
+    height: 2rem;
+    outline: none;
+    padding: 0.3em;
+    width: 25rem;
+  }
+
+  textarea {
+    color: $gray;
+    font-family: 'Gumela';
+    height: 5rem !important;
+  }
+
+  .contact-blur {
+    top: 10rem;
+    left: -10rem;
+  }
+
+  .contact-blur1 {
+    top: 1rem;
+    left: 8rem;
+  }
+}
