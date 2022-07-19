@@ -8,9 +8,9 @@ import '../scss/index.scss'
 const IndexPage = () => {
   return (
     <>
-      <head>
+      <header>
         <Navbar />
-      </head>
+      </header>
       <main>
         <About />
         <Services />
