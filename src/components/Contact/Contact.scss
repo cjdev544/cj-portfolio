@@ -2,7 +2,7 @@
 
 .contact {
   display: flex;
-  height: 80vh;
+  height: 60vh;
   margin-top: 8rem;
   padding-top: 3rem;
   padding: 0 3rem 0 3rem;
@@ -31,16 +31,16 @@
   }
 
   form {
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    align-items: center;
   }
 
   &-input {
-    color: $gray;
     border-radius: 8px;
     border: 2px solid $orange;
+    color: $gray;
     font-family: 'Gumela';
     font-size: 16px;
     height: 2rem;
@@ -56,12 +56,12 @@
   }
 
   .contact-blur {
-    top: 10rem;
     left: -10rem;
+    top: 10rem;
   }
 
   .contact-blur1 {
-    top: 1rem;
     left: 8rem;
+    top: 1rem;
   }
 }
