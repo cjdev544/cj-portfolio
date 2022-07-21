@@ -28,3 +28,9 @@
     gap: 2rem;
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .footer-content {
+    transform: scale(0.7);
+  }
+}

@@ -49,6 +49,26 @@
 }
 
 .swiper-slide {
-  width: 25rem !important;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+  width: 25rem !important;
+}
+
+@media screen and (max-width: $tablet) {
+  .portfolio {
+    margin-top: 15rem;
+  }
+
+  .swiper-slide {
+    width: 19rem !important;
+  }
+
+  .swiper-wrapper {
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .portfolio {
+    margin-top: 0;
+  }
 }

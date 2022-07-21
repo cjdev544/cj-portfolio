@@ -91,3 +91,15 @@
     display: initial;
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .navbar {
+    &-button {
+      display: none;
+    }
+
+    &-right {
+      flex: 0;
+    }
+  }
+}

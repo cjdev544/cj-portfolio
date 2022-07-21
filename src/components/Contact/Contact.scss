@@ -65,3 +65,23 @@
     top: -1rem;
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .contact {
+    flex-direction: column;
+    gap: 5rem;
+    height: 40rem;
+    padding: 0;
+
+    &-input {
+      width: 16rem;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .contac {
+    height: 34rem;
+    margin-top: 0;
+  }
+}

@@ -86,14 +86,14 @@ const About = ({ isDarkMode }) => {
           <StaticImage
             src='../../images/glassesimoji.png'
             placeholder='tracedSVG'
-            alt='emiji con lentes'
+            alt='emoji con lentes'
           />
         </motion.div>
 
         <motion.div
           className='about-right__floting'
-          initial={{ top: '-4%', left: '74%' }}
-          whileInView={{ left: '50%' }}
+          initial={{ top: '4rem', left: '74%' }}
+          whileInView={{ top: '4rem', left: '50%' }}
           transition={transition}
         >
           <StaticImage
@@ -111,8 +111,8 @@ const About = ({ isDarkMode }) => {
 
         <motion.div
           className='about-right__floting'
-          initial={{ left: '9rem', top: '10rem' }}
-          whileInView={{ left: '2rem' }}
+          initial={{ left: '9rem', top: '15rem' }}
+          whileInView={{ left: '2rem', top: '15rem' }}
           transition={transition}
         >
           <StaticImage

@@ -17,7 +17,7 @@ const Portfolio = ({ isDarkMode }) => {
       <Swiper
         modules={[Pagination, A11y]}
         spaceBetween={30}
-        slidesPerView={3}
+        slidesPerView={1}
         pagination={{ clickable: true }}
         className='portfolio-slider'
       >

@@ -53,3 +53,10 @@ p {
   width: 22rem;
   z-index: -9;
 }
+
+@media screen and (max-width: $tablet) {
+  .App {
+    max-width: 100vw;
+    padding: 0.5rem 1rem;
+  }
+}

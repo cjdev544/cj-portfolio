@@ -210,3 +210,38 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .skills {
+    display: block;
+    margin: 0;
+    margin-top: 15rem;
+
+    &-right {
+      display: flex;
+      justify-content: space-between;
+
+      &__circle,
+      &__circle2 {
+        position: initial;
+        transform: scale(0.6) !important;
+      }
+    }
+
+    &-backgrouncircle {
+      &.blue2,
+      &.yellow2,
+      &.blue,
+      &.yellow {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .skills-right {
+    align-items: center;
+    flex-direction: column;
+  }
+}

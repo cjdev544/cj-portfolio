@@ -97,6 +97,48 @@ const Services = ({ isDarkMode }) => {
           style={{ background: 'rgb(238 210 255)' }}
         />
       </div>
+      {/* Services card for tablet and mobile */}
+      <div className='right-media'>
+        <div className='right-card'>
+          <StaticImage
+            src='../../images/heartemoji.png'
+            placeholder='tracedSVG'
+            alt='emoji diseño UI UX'
+            className='right-card__img'
+          />
+          <h3 style={{ color: isDarkMode && '#fff' }}>UI / UX</h3>
+          <p>
+            Diseños atracivos enfocados en la usabilidad y experencia de usuario
+          </p>
+        </div>
+        <div className='right-card'>
+          <StaticImage
+            src='../../images/glasses.png'
+            placeholder='tracedSVG'
+            alt='emoji Programación'
+            className='right-card__img'
+          />
+          <h3 style={{ color: isDarkMode && '#fff' }}>Programación</h3>
+          <p>
+            Desarrollo de sitios web, Apps web y Apps de escritorio con
+            tecnologías web
+          </p>
+        </div>
+        <div className='right-card'>
+          <StaticImage
+            src='../../images/humble.png'
+            placeholder='tracedSVG'
+            alt='emoji diseño renponsivo'
+            className='right-card__img'
+          />
+          <h3 style={{ color: isDarkMode && '#fff' }}>Diseño responsivo</h3>
+          <p>Diseño adaptable a dispositivos, mobil, tablet y de escritorio.</p>
+        </div>
+        <div
+          className='blur services-blur2'
+          style={{ background: 'rgb(238 210 255)' }}
+        />
+      </div>
     </section>
   )
 }
