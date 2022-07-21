@@ -1,9 +1,15 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
+import { motion } from 'framer-motion'
 import Resume from './resume.pdf'
 import './About.scss'
 
 const About = ({ isDarkMode }) => {
+  const transition = {
+    duration: 2,
+    type: 'spring',
+  }
+
   return (
     <section className='about'>
       <div className='about-left'>
@@ -72,41 +78,56 @@ const About = ({ isDarkMode }) => {
           placeholder='tracedSVG'
           alt='Foto CjDev544'
         />
-        <StaticImage
-          src='../../images/glassesimoji.png'
-          placeholder='tracedSVG'
-          alt='emiji con lentes'
-        />
-        <div style={{ top: '-4%', left: '60%' }}>
-          <div className='about-right__floting'>
-            <StaticImage
-              src='../../images/crown.png'
-              placeholder='tracedSVG'
-              className='floting-image'
-              alt='Corona'
-            />
-            <span>
-              Desarrollador
-              <br />
-              Web
-            </span>
-          </div>
-        </div>
-        <div style={{ top: '21rem', left: '0' }}>
-          <div className='about-right__floting'>
-            <StaticImage
-              src='../../images/thumbup.png'
-              placeholder='tracedSVG'
-              className='floting-image'
-              alt='Mano arriba'
-            />
-            <span>
-              Desarrollos
-              <br />
-              FullStack
-            </span>
-          </div>
-        </div>
+        <motion.div
+          initial={{ left: '-36%' }}
+          whileInView={{ left: '-24%' }}
+          transition={transition}
+        >
+          <StaticImage
+            src='../../images/glassesimoji.png'
+            placeholder='tracedSVG'
+            alt='emiji con lentes'
+          />
+        </motion.div>
+
+        <motion.div
+          className='about-right__floting'
+          initial={{ top: '-4%', left: '74%' }}
+          whileInView={{ left: '50%' }}
+          transition={transition}
+        >
+          <StaticImage
+            src='../../images/crown.png'
+            placeholder='tracedSVG'
+            className='floting-image'
+            alt='Corona'
+          />
+          <span>
+            Desarrollador
+            <br />
+            Web
+          </span>
+        </motion.div>
+
+        <motion.div
+          className='about-right__floting'
+          initial={{ left: '9rem', top: '10rem' }}
+          whileInView={{ left: '2rem' }}
+          transition={transition}
+        >
+          <StaticImage
+            src='../../images/thumbup.png'
+            placeholder='tracedSVG'
+            className='floting-image'
+            alt='Mano arriba'
+          />
+          <span>
+            Desarrollos
+            <br />
+            FullStack
+          </span>
+        </motion.div>
+
         <div className='blur' style={{ background: 'rgb(238 210 255)' }} />
         <div
           className='blur'

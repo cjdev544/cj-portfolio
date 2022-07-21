@@ -1,8 +1,14 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
+import { motion } from 'framer-motion'
 import './Services.scss'
 
 const Services = ({ isDarkMode }) => {
+  const transition = {
+    duration: 1,
+    type: 'spring',
+  }
+
   return (
     <section className='services'>
       <div className='services-left'>
@@ -20,7 +26,11 @@ const Services = ({ isDarkMode }) => {
         />
       </div>
       <div className='services-right'>
-        <div style={{ left: '14rem' }}>
+        <motion.div
+          initial={{ left: '-11rem' }}
+          whileInView={{ left: '15rem' }}
+          transition={transition}
+        >
           <div className='services-card'>
             <StaticImage
               src='../../images/heartemoji.png'
@@ -34,8 +44,13 @@ const Services = ({ isDarkMode }) => {
               usuario
             </p>
           </div>
-        </div>
-        <div style={{ top: '12rem', left: '-4rem' }}>
+        </motion.div>
+        <motion.div
+          style={{ top: '12rem', left: '-10rem' }}
+          initial={{ left: '25rem' }}
+          whileInView={{ left: '-5rem' }}
+          transition={transition}
+        >
           <div className='services-card'>
             <StaticImage
               src='../../images/glasses.png'
@@ -49,8 +64,13 @@ const Services = ({ isDarkMode }) => {
               tecnologías web
             </p>
           </div>
-        </div>
-        <div style={{ top: '19rem', left: '12rem' }}>
+        </motion.div>
+        <motion.div
+          style={{ top: '19rem', left: '15rem' }}
+          initial={{ left: '-11rem', top: '19rem' }}
+          whileInView={{ left: '10rem', top: '19rem' }}
+          transition={transition}
+        >
           <div className='services-card'>
             <StaticImage
               src='../../images/humble.png'
@@ -63,7 +83,7 @@ const Services = ({ isDarkMode }) => {
               Diseño adaptable a dispositivos, mobil, tablet y de escritorio.
             </p>
           </div>
-        </div>
+        </motion.div>
         <div
           className='blur services-blur2'
           style={{ background: 'rgb(238 210 255)' }}

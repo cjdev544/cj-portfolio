@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
+import { motion } from 'framer-motion'
 import './Skills.scss'
 
 const Skills = ({ isDarkMode }) => {
@@ -20,7 +21,13 @@ const Skills = ({ isDarkMode }) => {
         />
       </div>
       <div className='skills-right'>
-        <div className='skills-right__circle'>
+        <motion.div
+          className='skills-right__circle'
+          initial={{ rotate: 45 }}
+          whileInView={{ rotate: 0 }}
+          viewport={{ margin: '-40px' }}
+          transition={{ duration: 3.5, type: 'spring' }}
+        >
           <div className='skills-right__circle-item'>
             <StaticImage
               src='../../images/javascript 1.png'
@@ -75,8 +82,14 @@ const Skills = ({ isDarkMode }) => {
             />
             <span>Express</span>
           </div>
-        </div>
-        <div className='skills-right__circle2'>
+        </motion.div>
+        <motion.div
+          className='skills-right__circle2'
+          initial={{ rotate: -45 }}
+          whileInView={{ rotate: 0 }}
+          viewport={{ margin: '-40px' }}
+          transition={{ duration: 3.5, type: 'spring' }}
+        >
           <div className='skills-right__circle2-item'>
             <StaticImage
               src='../../images/html5 1.png'
@@ -131,7 +144,7 @@ const Skills = ({ isDarkMode }) => {
             />
             <span>Electron</span>
           </div>
-        </div>
+        </motion.div>
         <div className='skills-backgrouncircle blue' />
         <div className='skills-backgrouncircle yellow' />
         <div className='skills-backgrouncircle blue2' />
