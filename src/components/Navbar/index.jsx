@@ -35,7 +35,14 @@ const Navbar = ({ setIsDarkMode }) => {
             </li>
           </ul>
         </div>
-        <button className='button navbar-button'>Contactame</button>
+        <Link
+          to='contacto'
+          spy={true}
+          smooth={true}
+          className='button navbar-button'
+        >
+          Contactame
+        </Link>
       </div>
     </nav>
   )

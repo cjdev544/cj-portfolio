@@ -36,6 +36,7 @@ const Contact = ({ isDarkMode }) => {
         showConfirmButton: false,
         timer: 2500,
       })
+      setSendingEmail(false)
       return
     }
 
@@ -46,6 +47,7 @@ const Contact = ({ isDarkMode }) => {
         showConfirmButton: false,
         timer: 2500,
       })
+      setSendingEmail(false)
       return
     }
 
@@ -56,6 +58,7 @@ const Contact = ({ isDarkMode }) => {
         showConfirmButton: false,
         timer: 2500,
       })
+      setSendingEmail(false)
       return
     }
 

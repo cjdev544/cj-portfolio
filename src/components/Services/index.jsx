@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { motion } from 'framer-motion'
+import { Link } from 'react-scroll'
 import './Services.scss'
 
 const Services = ({ isDarkMode }) => {
@@ -19,7 +20,14 @@ const Services = ({ isDarkMode }) => {
           desarrollador. <br /> Si buscas algo especifico, no dudes en
           contactarme.
         </span>
-        <button className='button services-left__button'>Contactame</button>
+        <Link
+          to='contacto'
+          spy={true}
+          smooth={true}
+          className='button services-left__button'
+        >
+          Contactame
+        </Link>
         <div
           className='blur services-blur1'
           style={{ background: '#abf1ff94' }}
