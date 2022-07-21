@@ -96,7 +96,7 @@ const Contact = ({ isDarkMode }) => {
   }
 
   return (
-    <section className='contact'>
+    <section className='contact' id='contacto'>
       <div className='contact-left'>
         <span style={{ color: isDarkMode && '#fff' }}>Trabajemos juntos</span>
         <h2>Contacto</h2>

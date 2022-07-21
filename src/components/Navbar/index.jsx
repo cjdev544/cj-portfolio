@@ -1,5 +1,6 @@
 import React from 'react'
 import Toggle from '../Toggle'
+import { Link } from 'react-scroll'
 import './Navbar.scss'
 
 const Navbar = ({ setIsDarkMode }) => {
@@ -12,11 +13,26 @@ const Navbar = ({ setIsDarkMode }) => {
       <div className='navbar-right'>
         <div className='navbar-right__list'>
           <ul>
-            <li className='navbar-right__list-item'>Inicio</li>
-            <li className='navbar-right__list-item'>Tecnologías</li>
-            <li className='navbar-right__list-item'>Servicios</li>
-            <li className='navbar-right__list-item'>Proyectos</li>
-            <li className='navbar-right__list-item'>Contacto</li>
+            <li className='navbar-right__list-item'>
+              <Link to='servicios' spy={true} smooth={true}>
+                Servicios
+              </Link>
+            </li>
+            <li className='navbar-right__list-item'>
+              <Link to='tecnologias' spy={true} smooth={true}>
+                Tecnologías
+              </Link>
+            </li>
+            <li className='navbar-right__list-item'>
+              <Link to='proyectos' spy={true} smooth={true}>
+                Proyectos
+              </Link>
+            </li>
+            <li className='navbar-right__list-item'>
+              <Link to='contacto' spy={true} smooth={true}>
+                Contacto
+              </Link>
+            </li>
           </ul>
         </div>
         <button className='button navbar-button'>Contactame</button>
