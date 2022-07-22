@@ -60,13 +60,6 @@ p {
   z-index: -9;
 }
 
-@media screen and (max-width: $tablet) {
-  .App {
-    max-width: 100vw;
-    padding: 0.5rem 1rem;
-  }
-}
-
 @media screen and (max-width: $mobile) {
   .container {
     width: 98%;

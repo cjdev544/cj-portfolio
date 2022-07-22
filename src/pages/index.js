@@ -13,7 +13,6 @@ const IndexPage = () => {
 
   return (
     <div
-      className='App'
       style={{ background: isDarkMode && '#000', color: isDarkMode && '#fff' }}
     >
       <header>
