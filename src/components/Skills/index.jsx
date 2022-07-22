@@ -5,7 +5,7 @@ import './Skills.scss'
 
 const Skills = ({ isDarkMode }) => {
   return (
-    <section className='skills' id='tecnologias'>
+    <section className='skills container' id='tecnologias'>
       <div className='services-left'>
         <span style={{ color: isDarkMode && '#fff' }}>Conoce que manejo</span>
         <h2>Tecnologías</h2>

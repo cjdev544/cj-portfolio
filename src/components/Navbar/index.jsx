@@ -12,7 +12,7 @@ const Navbar = ({ setIsDarkMode }) => {
   }
 
   return (
-    <nav className='navbar'>
+    <nav className='navbar container'>
       <div className='navbar-left'>
         <div className='navbar-left__name'>{`<CjDev544 />`}</div>
         <Toggle setIsDarkMode={setIsDarkMode} />

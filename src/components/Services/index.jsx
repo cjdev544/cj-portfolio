@@ -11,7 +11,7 @@ const Services = ({ isDarkMode }) => {
   }
 
   return (
-    <section className='services' id='servicios'>
+    <section className='services container' id='servicios'>
       <div className='services-left'>
         <span style={{ color: isDarkMode && '#fff' }}>Conoce mis</span>
         <h2>Servicios</h2>

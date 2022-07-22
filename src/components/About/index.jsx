@@ -11,7 +11,7 @@ const About = ({ isDarkMode }) => {
   }
 
   return (
-    <section className='about'>
+    <section className='about container'>
       <div className='about-left'>
         <div className='about-left__info'>
           <span style={{ color: isDarkMode && '#fff' }}>¡Hola!, yo soy</span>

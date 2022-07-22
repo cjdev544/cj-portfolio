@@ -52,6 +52,11 @@
 
         &.isOpen {
           left: 0;
+
+          html,
+          .App {
+            overflow: hidden;
+          }
         }
 
         & > ul {
@@ -86,6 +91,7 @@
 .hamburger-react {
   display: none;
 }
+
 @media screen and (max-width: $laptop) {
   .hamburger-react {
     display: initial;

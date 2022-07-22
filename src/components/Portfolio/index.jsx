@@ -10,7 +10,7 @@ import './Portfolio.scss'
 
 const Portfolio = ({ isDarkMode }) => {
   return (
-    <section className='portfolio' id='proyectos'>
+    <section className='portfolio container' id='proyectos'>
       <span style={{ color: isDarkMode && '#fff' }}>Deslisar para ver más</span>
       <h2>Proyectos</h2>
       <p>Puedes dar click sobre un proyecto y verlo mas a profundidad.</p>
