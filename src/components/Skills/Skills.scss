@@ -213,7 +213,7 @@
   }
 }
 
-@media screen and (max-width: $tablet) {
+@media screen and (max-width: $large) {
   .skills {
     display: block;
     margin: 0;
@@ -225,11 +225,12 @@
     &-right {
       display: flex;
       justify-content: space-between;
+      margin-top: 5rem;
 
       &__circle,
       &__circle2 {
         position: initial;
-        transform: scale(0.6) !important;
+        transform: scale(0.8) !important;
       }
     }
 
@@ -248,5 +249,11 @@
   .skills-right {
     align-items: center;
     flex-direction: column;
+    margin-top: 0;
+
+    &__circle,
+    &__circle2 {
+      transform: scale(0.6) !important;
+    }
   }
 }

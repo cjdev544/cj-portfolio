@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import About from '../components/About'
 import Services from '../components/Services'
 import Skills from '../components/Skills'
-import Portfolio from '../components/Portfolio'
+import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import '../scss/index.scss'
@@ -22,7 +22,7 @@ const IndexPage = () => {
         <About isDarkMode={isDarkMode} />
         <Services isDarkMode={isDarkMode} />
         <Skills isDarkMode={isDarkMode} />
-        <Portfolio isDarkMode={isDarkMode} />
+        <Projects isDarkMode={isDarkMode} />
         <Contact isDarkMode={isDarkMode} />
       </main>
       <Footer isDarkMode={isDarkMode} />
