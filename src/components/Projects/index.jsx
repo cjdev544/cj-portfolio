@@ -5,7 +5,7 @@ import './Projects.scss'
 const Projects = ({ isDarkMode }) => {
   return (
     <section id='proyectos' className='projects container'>
-      <span style={{ color: isDarkMode && '#fff' }}>Los más destacados</span>
+      <span style={{ color: isDarkMode && '#fff' }}>Algunos de mis</span>
       <h2>Proyectos</h2>
       <p>Puedes dar click sobre un proyecto y verlo mas en profundidad.</p>
       <div className='projects-items'>

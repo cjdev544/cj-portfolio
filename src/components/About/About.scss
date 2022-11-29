@@ -5,6 +5,10 @@
 
   &.container {
     margin-top: 6rem;
+
+    @media screen and (max-width: $tablet) {
+      margin-top: 3rem;
+    }
   }
 
   &-left {
@@ -141,7 +145,6 @@
 @media screen and (max-width: $tablet) {
   .about {
     flex-direction: column;
-    gap: 7rem;
     height: 64rem;
 
     &-right {
@@ -160,7 +163,18 @@
 }
 
 @media screen and (max-width: $mobile) {
-  .about-right {
-    left: -1rem;
+  .about {
+    height: 55rem;
+
+    &-right {
+      left: -1rem;
+    }
+  }
+
+  .about-left {
+    &__icons {
+      justify-content: center;
+      margin: 0;
+    }
   }
 }

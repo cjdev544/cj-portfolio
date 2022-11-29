@@ -132,6 +132,11 @@
 }
 
 @media screen and (max-width: $mobile) {
+  .services {
+    &.container {
+      margin-top: 0;
+    }
+  }
   .right-card {
     width: 80%;
   }
