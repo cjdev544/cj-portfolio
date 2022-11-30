@@ -35,6 +35,11 @@
     align-items: center;
     gap: 4rem;
     margin-top: 2rem;
+
+    &__card {
+      background-color: transparent;
+      border: none;
+    }
   }
 
   &-img {
