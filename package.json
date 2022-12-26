@@ -34,7 +34,7 @@
     "react-helmet": "^6.1.0",
     "react-scroll": "^1.8.7",
     "sass": "^1.53.0",
-    "sweetalert2": "^11.4.23",
+    "sweetalert2": "^11.4.23", 
     "swiper": "^8.3.1"
   }
 }
