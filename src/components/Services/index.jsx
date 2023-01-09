@@ -41,7 +41,7 @@ const Services = ({ isDarkMode }) => {
         >
           <div className='services-card'>
             <StaticImage
-              src='../../images/heartemoji.png'
+              src='../../images/ui.png'
               placeholder='tracedSVG'
               alt='emoji diseño UI UX'
               className='services-card__img'
@@ -61,7 +61,7 @@ const Services = ({ isDarkMode }) => {
         >
           <div className='services-card'>
             <StaticImage
-              src='../../images/glasses.png'
+              src='../../images/prog.png'
               placeholder='tracedSVG'
               alt='emoji Programación'
               className='services-card__img'
@@ -81,7 +81,7 @@ const Services = ({ isDarkMode }) => {
         >
           <div className='services-card'>
             <StaticImage
-              src='../../images/humble.png'
+              src='../../images/responsive.png'
               placeholder='tracedSVG'
               alt='emoji diseño renponsivo'
               className='services-card__img'

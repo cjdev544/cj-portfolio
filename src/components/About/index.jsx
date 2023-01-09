@@ -79,12 +79,12 @@ const About = ({ isDarkMode }) => {
           alt='Foto CjDev544'
         />
         <motion.div
-          initial={{ left: '-36%' }}
-          whileInView={{ left: '-24%' }}
+          initial={{ left: '-26%' }}
+          whileInView={{ left: '-14%' }}
           transition={transition}
         >
           <StaticImage
-            src='../../images/glassesimoji.png'
+            src='../../images/js.png'
             placeholder='tracedSVG'
             alt='emoji con lentes'
           />
@@ -97,7 +97,7 @@ const About = ({ isDarkMode }) => {
           transition={transition}
         >
           <StaticImage
-            src='../../images/crown.png'
+            src='../../images/web.png'
             placeholder='tracedSVG'
             className='floting-image'
             alt='Corona'
@@ -116,7 +116,7 @@ const About = ({ isDarkMode }) => {
           transition={transition}
         >
           <StaticImage
-            src='../../images/thumbup.png'
+            src='../../images/full.png'
             placeholder='tracedSVG'
             className='floting-image'
             alt='Mano arriba'
