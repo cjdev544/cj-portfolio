@@ -51,8 +51,8 @@ const Project2 = () => {
       <ul>
         <li>React</li>
         <li>Electron</li>
-        <li>Firebase</li>
         <li>Semantic UI</li>
+        <li>Firebase</li>
       </ul>
       <p className='link'>
         Repositorio:

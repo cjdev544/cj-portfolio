@@ -29,7 +29,7 @@ const Projects = ({ isDarkMode }) => {
           <StaticImage
             src='../../images/project1-1.jpg'
             placeholder='tracedSVG'
-            alt='sidebar project'
+            alt='web central food Málaga'
             className='projects-img'
           />
         </button>
@@ -40,7 +40,7 @@ const Projects = ({ isDarkMode }) => {
           <StaticImage
             src='../../images/project2-1.jpg'
             placeholder='tracedSVG'
-            alt='administrador central food'
+            alt='administrador central food Málaga'
             className='projects-img'
           />
         </button>
@@ -49,9 +49,9 @@ const Projects = ({ isDarkMode }) => {
           onClick={() => handleClick('project3')}
         >
           <StaticImage
-            src='../../images/musicapp.png'
+            src='../../images/project3-1.jpg'
             placeholder='tracedSVG'
-            alt='musicapp project'
+            alt='clone de facebook'
             className='projects-img'
           />
         </button>
@@ -60,9 +60,9 @@ const Projects = ({ isDarkMode }) => {
           onClick={() => handleClick('project4')}
         >
           <StaticImage
-            src='../../images/hoc.png'
+            src='../../images/project4-1.jpg'
             placeholder='tracedSVG'
-            alt='hoc project'
+            alt='clone de instagram'
             className='projects-img'
           />
         </button>
