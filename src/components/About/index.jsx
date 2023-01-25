@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { motion } from 'framer-motion'
-import Resume from './resume.pdf'
+import Resume from '../../images/resume.pdf'
 import './About.scss'
 
 const About = ({ isDarkMode }) => {
