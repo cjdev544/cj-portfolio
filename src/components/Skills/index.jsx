@@ -155,22 +155,3 @@ const Skills = ({ isDarkMode }) => {
 }
 
 export default Skills
-
-/**
- * JS
- * 1 JavaScript #f7df1e
- * 2 React #61dafb
- * 3 NextJs #000
- * 4 GatsbyJs #663399
- * 5 Node #339933
- * 6 Express #000
- *
- * 1 html #e34f26
- * 2 css #1572b6
- * 3 Apollo #311c87
- * 4 MongoDB #47a248
- * 5 Sass #cc6699
- * 6 Electron #47848f
- *
- * Twitter
- */

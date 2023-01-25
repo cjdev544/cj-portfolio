@@ -101,10 +101,10 @@ const Services = ({ isDarkMode }) => {
       <div className='right-media'>
         <div className='right-card'>
           <StaticImage
-            src='../../images/heartemoji.png'
+            src='../../images/ui.png'
             placeholder='tracedSVG'
             alt='emoji diseño UI UX'
-            className='right-card__img'
+            className='services-card__img'
           />
           <h3 style={{ color: isDarkMode && '#fff' }}>UI / UX</h3>
           <p>
@@ -113,10 +113,10 @@ const Services = ({ isDarkMode }) => {
         </div>
         <div className='right-card'>
           <StaticImage
-            src='../../images/glasses.png'
+            src='../../images/prog.png'
             placeholder='tracedSVG'
             alt='emoji Programación'
-            className='right-card__img'
+            className='services-card__img'
           />
           <h3 style={{ color: isDarkMode && '#fff' }}>Programación</h3>
           <p>
@@ -126,10 +126,10 @@ const Services = ({ isDarkMode }) => {
         </div>
         <div className='right-card'>
           <StaticImage
-            src='../../images/humble.png'
+            src='../../images/responsive.png'
             placeholder='tracedSVG'
             alt='emoji diseño renponsivo'
-            className='right-card__img'
+            className='services-card__img'
           />
           <h3 style={{ color: isDarkMode && '#fff' }}>Diseño responsivo</h3>
           <p>Diseño adaptable a dispositivos, mobil, tablet y de escritorio.</p>

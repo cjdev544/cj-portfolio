@@ -4,12 +4,25 @@
   box-sizing: border-box;
 }
 
+html {  
+  overflow-x: hidden;
+}
+
 body {
+  background: linear-gradient(
+    180deg,
+    #ffc973 0%,
+    rgba(255, 255, 255, 0) 6rem
+  );
+  background-repeat: no-repeat;
   font-family: 'Gumela';
   font-size: 20px;
   font-weight: normal;
   margin: 0;
+  max-width: 100%;
   overflow-x: hidden;
+  position: relative;
+  height: 100vh;
 }
 
 h1,
